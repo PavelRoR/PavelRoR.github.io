@@ -47,7 +47,25 @@ cont_width = 1123px
          url('../fonts/OfficinaSerifBookCItalic.svg#OfficinaSerifBookCItalic') format('svg');
 }
 
-   
+@font-face {
+    font-family: 'Andantinoscript';
+    src: url('../fonts/Andantinoscript.eot');
+    src: url('../fonts/Andantinoscript.eot') format('embedded-opentype'),
+         url('../fonts/Andantinoscript.woff2') format('woff2'),
+         url('../fonts/Andantinoscript.woff') format('woff'),
+         url('../fonts/Andantinoscript.ttf') format('truetype'),
+         url('../fonts/Andantinoscript.svg#Andantinoscript') format('svg');
+}  
+
+@font-face {
+    font-family: 'OfficinaSerifExtraBoldC';
+    src: url('../fonts/OfficinaSerifExtraBoldC.eot');
+    src: url('../fonts/OfficinaSerifExtraBoldC.eot') format('embedded-opentype'),
+         url('../fonts/OfficinaSerifExtraBoldC.woff2') format('woff2'),
+         url('../fonts/OfficinaSerifExtraBoldC.woff') format('woff'),
+         url('../fonts/OfficinaSerifExtraBoldC.ttf') format('truetype'),
+         url('../fonts/OfficinaSerifExtraBoldC.svg#OfficinaSerifExtraBoldC') format('svg');
+}
 
 html {
   line-height: 1.15; /* 1 */
@@ -212,5 +230,9 @@ body
 @import 'parts/bonus_3'
 /*! Восьмой экран экран */
 @import 'parts/eighth_screen'
+/*! Бонус экран */
+@import 'parts/bonus_4'
+/*! Автор */
+@import 'parts/author'
 /*! Медиа запросы */
 @import 'parts/_medias'
