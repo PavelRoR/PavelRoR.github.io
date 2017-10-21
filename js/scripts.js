@@ -64,8 +64,14 @@ $(document).ready(function() {
         autoplay: true,
         dots: true
     });
-    $(".slider-item").zoom()
+    // $(".slider-item").zoom();
 });
+    $(function() { $('body').on('click', '.more', function(e) { e.preventDefault();
+        $('#' + $(this).attr('data-id')).fadeIn(200);
+        $('.popup_inner').delay(300).animate({ top: "3%" }, 300) });
+    $('.close').click(function(e) { e.preventDefault();
+        $('.popup_back').delay(300).fadeOut(200);
+        $('.popup_inner').animate({ top: "-135%" }, 300) }); });
 });
 
 
