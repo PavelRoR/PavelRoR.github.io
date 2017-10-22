@@ -137,16 +137,17 @@
 		overflow hidden
 		padding-bottom: 8px;
 	#bonus
-		padding: 28px 42px 23px;
+		padding: 10px 0;
 		text-align center
-	.bonus
-		font-size: 3.5rem;
-		padding: 0 62px 15px 0px
-	.secret
-		float: none;
-		line-height: 74px;
-		padding-top: 0px;
-		font-size: 1.6rem;
+		.container
+			width 83%
+		.bonus
+			font-size: 3.5rem;
+			padding: 0 10px
+		.secret
+			float: left;
+			text-align: right;
+			padding: 15px;
 	.ten
 		padding-top 20px
 	.secrets_block
@@ -165,7 +166,35 @@
 		.secrets_block
 			width: 65%;
 			margin-top: 0;
-@media (max-width: 800px)
+	#bonus_3
+		padding: 10px 0;
+		.col-3_left
+			width: 37%;
+			.bonus
+				font-size: 3.5rem;
+				padding-top: 0;
+				
+		.col-3_right
+			width 60%
+			.secrets_block
+				width auto
+	#bonus_4
+		.col-3_left
+			width: 25%;
+			.bonus
+				font-size: 3.5rem;
+				padding-top: 0;
+		.col-3_right
+			width 70%
+			.secrets_block
+				width auto
+	.middle
+		width: 59%;
+	.middle_link
+		margin: 0 6px;
+	#how .row
+		width 100%
+@media (max-width: 959px)
 	.menu_ul li a
 		font-size .8rem
 	#header .container
@@ -194,7 +223,7 @@
 		float right
 	.bullits
 		width 73%
-	.janna
+	.janna-min
 		display: block;
 		position: absolute;
 		float: none;
@@ -297,6 +326,7 @@
 		left -999px
 	#menu_icon
 		display block
+		top 81px
 	.menu_ul
 		width 100%
 		display block
