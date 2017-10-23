@@ -222,7 +222,10 @@
 	.heading
 		float right
 	.bullits
-		width 73%
+		width 45%
+		margin-top 60px
+		li
+			line-height 1.5
 	.janna-min
 		display: block;
 		position: absolute;
@@ -242,7 +245,8 @@
 	.day_1_ol,
 	.day_2_ol,
 	.day_3_ol,
-	.day_4_ol
+	.day_4_ol,
+	.day_5_ol
 		font-size 18px
 	.day_1_ol li span
 		line-height 3
@@ -251,7 +255,8 @@
 	.day_1_ol li::before,
 	.day_2_ol li::before,
 	.day_3_ol li:before,
-	.day_4_ol li:before
+	.day_4_ol li:before,
+	.day_5_ol li:before
 		padding 14px 20px
 	.cell_head
 		width 122%
@@ -264,11 +269,6 @@
 		padding: 0 20px;
 		position: relative;
 		z-index: 99;
-	.bullits
-		transform none
-		margin: 0;
-		text-align: right;
-		width: auto;
 	.col-3
 		width: 88%;
 		padding: 0 20px;
@@ -291,10 +291,12 @@
 		padding 20px 0px 95px
 	.day_1_ol,
 	.day_3_ol,
-	.day_4_ol
+	.day_4_ol,
+	.day_5_ol
 		width 80%
 	.day_3_ol li,
-	.day_4_ol li
+	.day_4_ol li,
+	.day_5_ol li
 		display table
 		&:before,
 		span
@@ -315,6 +317,8 @@
 	#bonus
 		text-align center
 		padding 0 10px
+		.secret
+			float none
 	.bonus
 		float none
 		border-right: 0;
@@ -348,8 +352,7 @@
 	.secrets_block
 		margin-top 0
 		line-height 39px
-	#bonus_2
-		padding 24px 0
+	
 	.col-3_left
 		width: 100%;
 		text-align: center;
@@ -367,11 +370,60 @@
 		text-align: center;
 		margin: 0 auto;
 		.ten
-			margin-right: 0;
-			line-height: 3rem;
-			font-size: 6.5rem;
+			font-size: 4rem;
+			margin-top: 0;
+			line-height 4rem
 		.secrets_block
 			line-height: 1.1;
+	#bonus_2
+		padding 24px 0
+		.col-3_right 
+			width: 40%;
+	.subscribe_block
+		padding 20px 15px 95px
+	#bonus_3,
+	#bonus_4
+		.col-3_left
+			width auto
+	#bonus_3,
+	#bonus_4
+		.col-3_right .secrets_block
+			text-align center
+	#bonus_4
+		background-size inherit
+	.about_janna
+		width auto
+		float none
+		h6
+			font-size 2rem
+			display: inline-block;
+			width: 55%;
+	.middle
+		width 74%
+	#certificates
+		padding-top 130px
+		.left
+			position: relative;
+			left: 189px;
+			float: left;
+			padding-top: 20px;
+		.right
+			position: relative;
+			right: -195px;
+			float: left;
+			padding-top: 20px;
+	.popup_inner
+		max-width none
+		min-width auto
+		width 90%
+		overflow-y scroll
+		img
+			width inherit
+			height auto
+	#you_get_bullets .container
+		width 88%
+		.middle
+			margin 0 20px
 @media (max-width: 768px)
 	.col-3_right
 		width 60%
