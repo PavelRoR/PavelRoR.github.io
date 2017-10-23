@@ -43,7 +43,7 @@
 	top: 0;
 	left: 0;
 	z-index: 999999;
-	overflow-y scroll
+
 .popup_inner
 	position: absolute;
 	top: 5%;
@@ -52,16 +52,21 @@
 	z-index: 9999995;
 	margin: 0 auto;
 	height auto
-	max-width: 40%;
-	padding: 40px;
-	border: 1px solid #383838;
+	max-width: 60%;
+	padding: 20px;
 	background: #fff;
-	-ms-box-shadow: 0 15px 20px rgba(0, 0, 0, .22), 0 19px 60px rgba(0, 0, 0, .3);
-	box-shadow: 0 15px 20px rgba(0, 0, 0, .22), 0 19px 60px rgba(0, 0, 0, .3);
+	overflow-y scroll
+	max-height 90vh
 	img
 		display block
 		margin 0 auto
-		width 90%
+		width auto
+		padding-bottom 20px
+		height 90vh
+	p:last-child
+		padding-bottom 20px
+.politics_wrap
+	height 90vh
 .close
 	top: 20px;
 	right: 20px;
@@ -71,3 +76,5 @@
 	padding: 0;
 	background: url(../img/close.png) 50% no-repeat;
 	cursor: pointer;
+.politics h3
+	font-weight bold
