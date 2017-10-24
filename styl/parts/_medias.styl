@@ -551,6 +551,30 @@
 	#bonus_3 .col-3_right
 		width 100%
 		padding 0
+	#slider
+		margin-bottom 32px
+	.slick-next, .slick-prev
+		top:50%
+	.slider-item
+		padding-top 0
+	.slider-item_text
+		padding 20px
+	.slider-item_text
+		max-height: 582px;
+		overflow-y: scroll;
+	.slider-item_text img
+		position relative
+		top 0
+		right 40px
+		width: 28%;
+		float: right;
+	.slider-item_text h5
+		font-size: 47px;
+		margin-bottom: 15px;
+	.slick-dots
+		width 20%
+	.slick-track
+		padding-bottom 10px
 @media (max-width: 640px)
 	.callto
 		font-size: 1.4rem
@@ -716,6 +740,28 @@
 	.footer_form p
 		width 100%
 		padding 0 10px
+@media (max-width: 480px)
+	.slides_container
+		height auto
+		max-height 300px
+	.slick-next, .slick-prev
+		display none !important
+	.slick-track
+		padding-bottom 0
+
+	.slick-slide
+		max-height 450px
+	.slider-item_text
+		padding 18px
+		max-height: 582px;
+		overflow-y: scroll;
+	.slider-item_text img
+		display none
+	.slider-item_text h5
+		font-size 24px
+		font-weight bold
+	.slider-item_text .caption
+		font-size 16px
 @media (max-width: 470px)
 	.callto
 		text-align left

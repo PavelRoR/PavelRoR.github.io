@@ -101,6 +101,7 @@ $(document).ready(function () {
 	});
 	$(function () {
 		$('body').on('click', '.spam', function (e) {
+			// $('body').css({"overflow-y": "hidden"});
 			e.preventDefault();
             $('.' + $(this).attr('data-class')).fadeIn(200);
             $('.popup_inner').delay(300).animate({
