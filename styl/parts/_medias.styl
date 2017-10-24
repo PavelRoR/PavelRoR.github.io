@@ -41,7 +41,7 @@
 	#header .container
 		padding 12px 21px 0px
 	.logo_link
-		margin-left 0
+		margin-left 16px
 	#bonus_2 .container 
 		width: 100%;
 	#certificates .certificates_wrapper
@@ -143,6 +143,7 @@
 		font-size 1rem
 	.callto
 		font-size 1.8rem
+	
 @media (max-width: 960px)
 	#fifth_screen
 		overflow hidden
@@ -501,6 +502,16 @@
 @media (max-width: 768px)
 	.col-3_right
 		width 60%
+	.logo_link
+		margin-left 0
+		img
+			float left
+			width 60%
+	.callto
+		margin-right 0
+		font-size 1.5rem
+	.contacts
+		font-size 1.3rem
 @media (max-width: 650px)
 	.first_screen_form .mail,
 	.first_screen_form .button,
@@ -576,13 +587,10 @@
 	.slick-track
 		padding-bottom 10px
 @media (max-width: 640px)
-	.callto
-		font-size: 1.4rem
 	.logo_link
-		width 50%
-	.logo_link img
-		width: 95%;
-		float: left;
+		width 47%
+		img
+			width 90%
 	.first_screen_form p
 		padding 23px
 	.janna
@@ -596,24 +604,15 @@
 	.tree_dark_icons
 		display none
 @media (max-width: 560px)
+	.callto
+		line-height 1
+		img
+			width 4%
 	.col-3_right
 		width: 80%;
 	.secrets_block
 		width: 70%;
 @media (max-width: 540px)
-	#header
-		margin-bottom 10px
-	.logo_link
-		width 100%
-		margin-bottom 5px
-	.logo_link img
-		width auto
-		float left
-	.callto
-		text-align: center;
-		width: 100%;
-	.contacts
-		font-size: 1.4rem;
 	#first_section
 		background-image url(../img/first_screen_back_min.jpg)
 		padding-top: 10px;
@@ -741,6 +740,26 @@
 		width 100%
 		padding 0 10px
 @media (max-width: 480px)
+	#header
+		.container
+			padding 12px 12px 0
+		.logo_link
+			display: inline-block;
+			float: left;
+			width: 45%;
+			img
+				width 100%
+	.callto
+		text-align: right;
+		float: right;
+		width: auto;
+		line-height: 1;
+		img
+			width 8%
+	.contacts
+		margin-top 5px
+		img
+			width 8%
 	#slider
 		margin-bottom 220px
 	.slides_container
@@ -767,6 +786,8 @@
 @media (max-width: 470px)
 	.callto
 		text-align left
+	.mailto
+		margin-right 15px
 	.skypeadd
 		float left
 	.first_screen_form #email
@@ -823,6 +844,15 @@
 		.ten
 			font-size 3rem
 @media (max-width: 360px)
+	.logo_link
+		width 100%
+		img
+			width 65%
+	.callto
+		float: left;
+		font-size: 1.3rem;
+	#menu_icon
+		top 33px
 	.contacts 
 		font-size: 1.2rem;
 	.col-3 
