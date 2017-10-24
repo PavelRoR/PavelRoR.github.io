@@ -1,14 +1,21 @@
 footer#footer
 	.container
-		form(action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results").footer_form
-			input(class="field_value mail" maxlength="255" name="Contact[email]" type="text" placeholder="Введите вашу почту")
+		form(action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results").footer_form.form_newsletter
+			.email-block
+				input( type="hidden" value="1" name="required_fields[email]" placeholder="")
+				input(class="field_value mail" maxlength="255" name="Contact[email]" type="text" placeholder="Введите вашу почту")
+			.phone-block.hide
+				input(type="hidden" value="0" name="required_fields[phone_number]" placeholder="")
+				input(class="phone" maxlength="255" id="contact_phone" name="Contact[phone_number]" type="number" placeholder="+79333333333")
 			button(type="submit").button ЗАПИСАТЬСЯ
 			<!--Обязательный параметр. Не удалять и не изменять!-->
 			input( type="hidden" value="233" name="Contact[id_newsletter]")
 			<!--API код канала рекламы-->
 			input(type="hidden" value="0" name="Contact[id_advertising_channel_page]")
 			.clfix
-			p Запишитесь прямо сейчас и получите бонус!
+			p.infront Запишитесь прямо сейчас и получите бонус!
+			p.infront_submit.hide
+			p.span_phone.hide
 			small.spam(data-class="politics") Политика конфиденциальности
 .popup_back.politics
 		.popup_inner.politics_wrap

@@ -49,9 +49,18 @@
           <h3 class="date wow pulse" data-wow-duration="2s" data-wow-delay="4" data-wow-iteration="infinite">С 20 ПО 25 НОЯБРЯ</h3>
         </div><img class="janna" src="img/janna.png" alt="Жанна Абрамова"/><img class="janna-min" src="img/janna-min.png" alt="Жанна Абрамова"/>
         <div class="clfix"></div>
-        <form class="first_screen_form" action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&amp;id=3568&amp;lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results">
-          <p>заполните форму и получите видео-бонус “Формула женского счастья” уже сейчас!</p>
-          <input class="mail required" maxlength="255" name="Contact[email]" type="text" placeholder="Введите вашу почту"/>
+        <form class="first_screen_form form_newsletter" action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&amp;id=3568&amp;lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results">
+          <p class="infront">заполните форму и получите видео-бонус “Формула женского счастья” уже сейчас!</p>
+          <p class="infront_submit hide"></p>
+          <p class="span_phone hide"></p>
+          <div class="email-block">
+            <input type="hidden" value="1" name="required_fields[email]" placeholder=""/>
+            <input class="mail required" maxlength="255" name="Contact[email]" type="text" placeholder="Введите вашу почту"/>
+          </div>
+          <div class="phone-block hide">
+            <input type="hidden" value="0" name="required_fields[phone_number]" placeholder=""/>
+            <input class="phone" maxlength="255" id="contact_phone" name="Contact[phone_number]" type="number" placeholder="+79333333333"/>
+          </div>
           <button class="button" type="submit">ЗАПИСАТЬСЯ</button><!--Обязательный параметр. Не удалять и не изменять!-->
           <input type="hidden" value="233" name="Contact[id_newsletter]"/><!--API код канала рекламы-->
           <input type="hidden" value="0" name="Contact[id_advertising_channel_page]"/>
@@ -146,11 +155,20 @@
           <div class="clfix"></div>
         </div>
         <div class="subscribe_block wow flipInX" data-wow-offset="250">
-          <h3>Хотите научиться видеть истинные намерения мужчины, а не мучиться в догадках почему и зачем <br>он так сказал и поступил?</h3>
+          <h3>Хотите научиться видеть истинные намерения мужчины, а не мучиться в догадках почему и зачем он так сказал и поступил?</h3>
           <h4 class="date wow pulse" data-wow-duration="2s" data-wow-delay="4" data-wow-iteration="infinite" data-wow-offset="250">С 20 ПО 25 НОЯБРЯ</h4>
-          <h3>будьте вместе с нами на онлайн-интенсиве <br>«О чем молчат мужчины»!</h3>
-          <form class="_form" action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&amp;id=3568&amp;lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results">
-            <input class="field_value mail" maxlength="255" name="Contact[email]" type="text" placeholder="Введите вашу почту"/>
+          <form class="_form form_newsletter" action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&amp;id=3568&amp;lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results">
+            <h3 class="infront">будьте вместе с нами на онлайн-интенсиве <br>«О чем молчат мужчины»!</h3>
+            <p class="infront_submit hide"></p>
+            <p class="span_phone hide"></p>
+            <div class="email-block">
+              <input type="hidden" value="1" name="required_fields[email]" placeholder=""/>
+              <input class="field_value mail" maxlength="255" name="Contact[email]" type="text" placeholder="Введите вашу почту"/>
+            </div>
+            <div class="phone-block hide">
+              <input type="hidden" value="0" name="required_fields[phone_number]" placeholder=""/>
+              <input class="phone" maxlength="255" id="contact_phone" name="Contact[phone_number]" type="number" placeholder="+79333333333"/>
+            </div>
             <button class="button" type="submit">ЗАПИСАТЬСЯ</button><!--Обязательный параметр. Не удалять и не изменять!-->
             <input type="hidden" value="233" name="Contact[id_newsletter]"/><!--API код канала рекламы-->
             <input type="hidden" value="0" name="Contact[id_advertising_channel_page]"/>
@@ -286,9 +304,18 @@
           <div class="subscribe_block wow flipInX" data-wow-offset="250" id="bonus_4_form">
             <h3>Хотите узнать как получить предложение о замужестве и понять в каких случаях  мужчина не собирается делать предложение?
               <h4 class="date wow pulse" data-wow-duration="2s" data-wow-delay="4" data-wow-iteration="infinite" data-wow-offset="250">С 20 ПО 25 НОЯБРЯ</h4>
-              <h3>Зарегистрируйтесь на онлайн-интенсив сейчас и будьте вместе с нами 5 вечеров</h3>
-              <form class="_form" action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&amp;id=3568&amp;lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results">
-                <input class="field_value mail" maxlength="255" name="Contact[email]" type="text" placeholder="Введите вашу почту"/>
+              <form class="_form form_newsletter" action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&amp;id=3568&amp;lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results">
+                <h3 class="infront">Зарегистрируйтесь на онлайн-интенсив сейчас и будьте вместе с нами 5 вечеров</h3>
+                <p class="infront_submit hide"></p>
+                <p class="span_phone hide"></p>
+                <div class="email-block">
+                  <input type="hidden" value="1" name="required_fields[email]" placeholder=""/>
+                  <input class="field_value mail" maxlength="255" name="Contact[email]" type="text" placeholder="Введите вашу почту"/>
+                </div>
+                <div class="phone-block hide">
+                  <input type="hidden" value="0" name="required_fields[phone_number]" placeholder=""/>
+                  <input class="phone" maxlength="255" id="contact_phone" name="Contact[phone_number]" type="number" placeholder="+79333333333"/>
+                </div>
                 <button class="button" type="submit">ЗАПИСАТЬСЯ</button><!--Обязательный параметр. Не удалять и не изменять!-->
                 <input type="hidden" value="233" name="Contact[id_newsletter]"/><!--API код канала рекламы-->
                 <input type="hidden" value="0" name="Contact[id_advertising_channel_page]"/>
@@ -424,9 +451,18 @@
           <div class="subscribe_block wow flipInX" data-wow-offset="250">
             <h3>Хотите знать, что важно делать, чтобы отношения укреплялись, а не разрушались?</h3>
             <h4 class="date wow pulse" data-wow-duration="2s" data-wow-delay="4" data-wow-iteration="infinite" data-wow-offset="250">С 20 ПО 25 НОЯБРЯ</h4>
-            <h3>будьте вместе с нами на онлайн-интенсиве «О чем молчат мужчины»!</h3>
-            <form class="_form" action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&amp;id=3568&amp;lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results">
-              <input class="field_value mail" maxlength="255" name="Contact[email]" type="text" placeholder="Введите вашу почту"/>
+            <form class="_form form_newsletter" action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&amp;id=3568&amp;lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results">
+              <h3 class="infront">будьте вместе с нами на онлайн-интенсиве «О чем молчат мужчины»!</h3>
+              <p class="infront_submit hide"></p>
+              <p class="span_phone hide"></p>
+              <div class="email-block">
+                <input type="hidden" value="1" name="required_fields[email]" placeholder=""/>
+                <input class="field_value mail" maxlength="255" name="Contact[email]" type="text" placeholder="Введите вашу почту"/>
+              </div>
+              <div class="phone-block hide">
+                <input type="hidden" value="0" name="required_fields[phone_number]" placeholder=""/>
+                <input class="phone" maxlength="255" id="contact_phone" name="Contact[phone_number]" type="number" placeholder="+79333333333"/>
+              </div>
               <button class="button" type="submit">ЗАПИСАТЬСЯ</button><!--Обязательный параметр. Не удалять и не изменять!-->
               <input type="hidden" value="233" name="Contact[id_newsletter]"/><!--API код канала рекламы-->
               <input type="hidden" value="0" name="Contact[id_advertising_channel_page]"/>
@@ -482,9 +518,9 @@
             </div>
             <div class="row">
               <ul class="must_go_ul">
-                <li class="hide"></li>
+                <li class="hide_li"></li>
                 <li> <img src="img/bull_16.jpg" alt="16"/><span>Узнать секрет: что все-таки значит «женщина мечты». Какая она и что для этого надо делать</span></li>
-                <li class="hide"></li>
+                <li class="hide_li"></li>
               </ul>
             </div>
             <div class="clfix"></div>
@@ -496,9 +532,18 @@
           <div class="subscribe_block wow flipInX" data-wow-offset="250">
             <h3>Хотите знать, что важно делать, чтобы отношения укреплялись, а не разрушались?</h3>
             <h4 class="date wow pulse" data-wow-duration="2s" data-wow-delay="4" data-wow-iteration="infinite" data-wow-offset="250">С 20 ПО 25 НОЯБРЯ</h4>
-            <h3>будьте вместе с нами на онлайн-интенсиве <br/> «О чем молчат мужчины»!</h3>
-            <form class="_form" action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&amp;id=3568&amp;lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results">
-              <input class="field_value mail" maxlength="255" name="Contact[email]" type="text" placeholder="Введите вашу почту"/>
+            <form class="_form form_newsletter" action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&amp;id=3568&amp;lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results">
+              <h3 class="infront">будьте вместе с нами на онлайн-интенсиве <br/> «О чем молчат мужчины»!</h3>
+              <p class="infront_submit hide"></p>
+              <p class="span_phone hide"></p>
+              <div class="email-block">
+                <input type="hidden" value="1" name="required_fields[email]" placeholder=""/>
+                <input class="field_value mail" maxlength="255" name="Contact[email]" type="text" placeholder="Введите вашу почту"/>
+              </div>
+              <div class="phone-block hide">
+                <input type="hidden" value="0" name="required_fields[phone_number]" placeholder=""/>
+                <input class="phone" maxlength="255" id="contact_phone" name="Contact[phone_number]" type="number" placeholder="+79333333333"/>
+              </div>
               <button class="button" type="submit">ЗАПИСАТЬСЯ</button><!--Обязательный параметр. Не удалять и не изменять!-->
               <input type="hidden" value="233" name="Contact[id_newsletter]"/><!--API код канала рекламы-->
               <input type="hidden" value="0" name="Contact[id_advertising_channel_page]"/>
@@ -608,13 +653,22 @@
     </div>
     <footer id="footer">
       <div class="container">
-        <form class="footer_form" action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&amp;id=3568&amp;lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results">
-          <input class="field_value mail" maxlength="255" name="Contact[email]" type="text" placeholder="Введите вашу почту"/>
+        <form class="footer_form form_newsletter" action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&amp;id=3568&amp;lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results">
+          <div class="email-block">
+            <input type="hidden" value="1" name="required_fields[email]" placeholder=""/>
+            <input class="field_value mail" maxlength="255" name="Contact[email]" type="text" placeholder="Введите вашу почту"/>
+          </div>
+          <div class="phone-block hide">
+            <input type="hidden" value="0" name="required_fields[phone_number]" placeholder=""/>
+            <input class="phone" maxlength="255" id="contact_phone" name="Contact[phone_number]" type="number" placeholder="+79333333333"/>
+          </div>
           <button class="button" type="submit">ЗАПИСАТЬСЯ</button><!--Обязательный параметр. Не удалять и не изменять!-->
           <input type="hidden" value="233" name="Contact[id_newsletter]"/><!--API код канала рекламы-->
           <input type="hidden" value="0" name="Contact[id_advertising_channel_page]"/>
           <div class="clfix"></div>
-          <p>Запишитесь прямо сейчас и получите бонус!</p><small class="spam" data-class="politics">Политика конфиденциальности</small>
+          <p class="infront">Запишитесь прямо сейчас и получите бонус!</p>
+          <p class="infront_submit hide"></p>
+          <p class="span_phone hide"></p><small class="spam" data-class="politics">Политика конфиденциальности</small>
         </form>
       </div>
     </footer>
@@ -669,5 +723,6 @@
     <script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
     <script src="js/scripts.js"></script>
+    <iframe name="results" style="display:none;"></iframe>
   </body>
 </html>

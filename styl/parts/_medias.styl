@@ -137,7 +137,8 @@
 	
 	#certificates .certificates_wrapper
 		width 97%
-	
+	#fifth_screen
+		overflow hidden
 @media (max-width: 1013px)
 	.menu_ul li a
 		font-size 1rem
@@ -424,14 +425,14 @@
 	#certificates
 		padding-top 130px
 		.left
-			position: relative;
+			position: static;
 			left: 189px;
 			float: left;
 			padding-top: 20px;
 		.right
-			position: relative;
+			position: static;
 			right: -195px;
-			float: left;
+			float: right;
 			padding-top: 20px;
 	.popup_inner
 		max-width none
@@ -489,8 +490,10 @@
 
 	#must_go_bullet
 		margin-top 30px
-	.hide
+	.hide_li
 		display none !important
+	.hide
+		display none
 	.slick-slide
 		max-height 565px
 	.slider-item_text .caption
@@ -539,7 +542,9 @@
 		background-position: right 27px;
 	.about_evelina h6
 		font-size 2rem
-	#you_get_bullets .left, #you_get_bullets .container .middle, #you_get_bullets .right
+	#you_get_bullets .left, 
+	#you_get_bullets .container .middle, 
+	#you_get_bullets .right
 		float none
 		margin 0 auto
 	#girl
@@ -612,6 +617,8 @@
 		width: 80%;
 	.secrets_block
 		width: 70%;
+	#you_get_bullets .container
+		width auto
 @media (max-width: 540px)
 	#first_section
 		background-image url(../img/first_screen_back_min.jpg)
@@ -626,10 +633,17 @@
 		margin: 0 auto;
 	.janna
 		display none
+	
+	.day_1_ol li,
+	.day_2_ol li,
+	.day_3_ol li,
+	.day_4_ol li
+		margin 0 auto 15px
 	.day_1_ol li span,
 	.day_2_ol li span,
 	.day_3_ol li span,
 	.day_4_ol li span
+		width 100%
 		line-height 1
 	.day_2_ol li::before
 		margin-bottom: 14px;
@@ -670,13 +684,18 @@
 	.col-3_right .secrets_block
 		width 100%
 		text-align center
-	.day_1_ol li span, .day_2_ol li span, .day_3_ol li span, .day_4_ol li span
-		width 188px
+	.day_1_ol li span, 
+	.day_2_ol li span, 
+	.day_3_ol li span, 
+	.day_4_ol li span
 		float none
-	.day_4_ol li:first-child span, .day_4_ol li:nth-child(2) span, .day_4_ol li:nth-child(4) span
+	.day_4_ol li:first-child span, 
+	.day_4_ol li:nth-child(2) span, 
+	.day_4_ol li:nth-child(4) span
 		line-height 1
 
-	.day_5_ol li:nth-child(5) span, .day_5_ol li:nth-child(6) span
+	.day_5_ol li:nth-child(5) span, 
+	.day_5_ol li:nth-child(6) span
 		line-height 1
 	#bonus_4
 		background-size cover
@@ -738,7 +757,7 @@
 		width 275px
 	.footer_form p
 		width 100%
-		padding 0 10px
+		padding 10px
 @media (max-width: 480px)
 	#header
 		.container
@@ -784,6 +803,8 @@
 	.slider-item_text .caption
 		font-size 16px
 @media (max-width: 470px)
+	#menu_icon
+		top 65px
 	.callto
 		text-align left
 	.mailto
@@ -799,9 +820,6 @@
 		float: none;
 		display: block;
 		width: 100%;
-
-	#menu_icon
-		top 65px
 	.evelina_2
 		display none
 	.secret
@@ -811,6 +829,8 @@
 		margin-top: 12px;
 		font-size: 108px;
 		line-height: 100px;
+	.day_2_ol
+		width 80%
 @media (max-width: 420px)
 	#third_screen
 		overflow hidden
@@ -845,14 +865,12 @@
 			font-size 3rem
 @media (max-width: 360px)
 	.logo_link
-		width 100%
+		width 100% !important
 		img
-			width 65%
+			width 248px
 	.callto
 		float: left;
 		font-size: 1.3rem;
-	#menu_icon
-		top 33px
 	.contacts 
 		font-size: 1.2rem;
 	.col-3 
@@ -860,3 +878,5 @@
 		padding: 0 0 0 20px;
 	.secrets_block small
 		font-size 23px
+	.slick-dots
+		width 33%

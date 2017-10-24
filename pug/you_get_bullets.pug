@@ -43,9 +43,16 @@ section.mail_block
 		.subscribe_block.wow.flipInX(data-wow-offset="250")
 			h3 Хотите знать, что важно делать, чтобы отношения укреплялись, а не разрушались?
 			h4.date.wow.pulse(data-wow-duration="2s" data-wow-delay="4" data-wow-iteration="infinite" data-wow-offset="250") С 20 ПО 25 НОЯБРЯ
-			h3 будьте вместе с нами на онлайн-интенсиве «О чем молчат мужчины»!
-			form(action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results")._form
-				input(class="field_value mail" maxlength="255" name="Contact[email]" type="text" placeholder="Введите вашу почту")
+			form(action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results")._form.form_newsletter
+				h3.infront будьте вместе с нами на онлайн-интенсиве «О чем молчат мужчины»!
+				p.infront_submit.hide
+				p.span_phone.hide
+				.email-block
+					input( type="hidden" value="1" name="required_fields[email]" placeholder="")
+					input(class="field_value mail" maxlength="255" name="Contact[email]" type="text" placeholder="Введите вашу почту")
+				.phone-block.hide
+					input(type="hidden" value="0" name="required_fields[phone_number]" placeholder="")
+					input(class="phone" maxlength="255" id="contact_phone" name="Contact[phone_number]" type="number" placeholder="+79333333333")
 				button(type="submit").button ЗАПИСАТЬСЯ
 				<!--Обязательный параметр. Не удалять и не изменять!-->
 				input( type="hidden" value="233" name="Contact[id_newsletter]")
